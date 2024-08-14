@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Onebox</title>
+</head>
+<body>
+    <div class="onebox-container">
+        <div class="threads-list" id="threadsList">
+            <!-- Threads will be dynamically populated here -->
+        </div>
+        <div class="thread-details" id="threadDetails">
+            <h2 id="threadTitle"></h2>
+            <p id="threadContent"></p>
+            <div id="textEditor"></div>
+            <button id="replyButton">Reply</button>
+            <div id="replyBox" style="display: none;">
+                <textarea id="replyContent"></textarea>
+                <button id="sendReply">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="onebox.js"></script>
+    <button id="themeToggle">Toggle Theme</button>
+    <script src="theme.js"></script>
+
+</body>
+</html>
